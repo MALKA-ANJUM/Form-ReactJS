@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.content{
+form{
     background: green;
     width: 400px;
     height: 300px;

@@ -49,3 +49,11 @@ button{
 button:hover{
     background: rgb(237, 255, 237);
 }
+p{
+    color: #fff;
+    font-family: sans-serif;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}

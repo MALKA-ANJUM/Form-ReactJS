@@ -22,38 +22,43 @@ function App() {
 
     setfullName((prevalue) => {
       //console.log(prevalue);
-      if(name === 'fname') {
-        return{
-          fname: value,
-          lname: prevalue.lname,
-          email: prevalue.email,
-          phone: prevalue.phone 
-        }
+      return{
+        ...prevalue,
+        [name]: value,
       }
-      else if(name === 'lname') {
-        return{
-          fname: prevalue.fname,
-          lname: value,
-          email: prevalue.email,
-          phone: prevalue.phone 
-        }
-      }
-      else if(name === 'email') {
-        return{
-          fname: prevalue.fname,
-          lname: prevalue.lname,
-          email: value,
-          phone: prevalue.phone 
-        }
-      }
-      else if(name === 'phone') {
-        return{
-          fname: prevalue.fname,
-          lname: prevalue.lname,
-          email: prevalue.email,
-          phone: value 
-        }
-      }
+    
+      // if(name === 'fname') {
+      //   return{
+      //     fname: value,
+      //     lname: prevalue.lname,
+      //     email: prevalue.email,
+      //     phone: prevalue.phone 
+      //   }
+      // }
+      // else if(name === 'lname') {
+      //   return{
+      //     fname: prevalue.fname,
+      //     lname: value,
+      //     email: prevalue.email,
+      //     phone: prevalue.phone 
+      //   }
+      // }
+      // else if(name === 'email') {
+      //   return{
+      //     fname: prevalue.fname,
+      //     lname: prevalue.lname,
+      //     email: value,
+      //     phone: prevalue.phone 
+      //   }
+      // }
+      // else if(name === 'phone') {
+      //   return{
+      //     fname: prevalue.fname,
+      //     lname: prevalue.lname,
+      //     email: prevalue.email,
+      //     phone: value 
+      //   }
+      // }
       
     });
   };
